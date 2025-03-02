@@ -5,13 +5,13 @@ import fs from "fs";
 import { Parser as Json2CsvParser } from "json2csv";
 import { z } from "zod";
 
-import StagehandConfig from "./stagehand.config.js";
+import StagehandConfig from "../stagehand.config.js";
 import {
   clearOverlays,
   drawObserveOverlay,
   readCache,
   simpleCache,
-} from "./utils.js";
+} from "../utils.js";
 
 dotenv.config();
 

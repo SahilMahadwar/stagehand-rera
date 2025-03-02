@@ -1,7 +1,7 @@
 import type { ConstructorParams, LogLine } from "@browserbasehq/stagehand";
 import dotenv from "dotenv";
-false
-false
+false;
+false;
 
 dotenv.config();
 
@@ -20,12 +20,10 @@ const StagehandConfig: ConstructorParams = {
   enableCaching: undefined /* Enable caching functionality */,
   browserbaseSessionID:
     undefined /* Session ID for resuming Browserbase sessions */,
-  modelName: "gpt-4o-mini" /* Name of the model to use */,
-      modelClientOptions: {
-        apiKey: process.env.OPENAI_API_KEY,
-      } /* Configuration options for the model client */,
-  
-  
+  modelName: "gpt-4o" /* Name of the model to use */,
+  modelClientOptions: {
+    apiKey: process.env.OPENAI_API_KEY,
+  } /* Configuration options for the model client */,
 };
 
 export default StagehandConfig;

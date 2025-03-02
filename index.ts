@@ -12,7 +12,7 @@
 import { Stagehand } from "@browserbasehq/stagehand";
 import boxen from "boxen";
 import chalk from "chalk";
-import { main } from "./main.js";
+import { extractProjectDetails } from "./scripts/extract-project-details.js";
 import StagehandConfig from "./stagehand.config.js";
 
 async function run() {
@@ -38,7 +38,7 @@ async function run() {
 
   const page = stagehand.page;
   const context = stagehand.context;
-  await main({
+  await extractProjectDetails({
     page,
     context,
     stagehand,
